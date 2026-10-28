@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MAX VPN MOZ</title>
+  <style>
+    body {
+      background: #080d18;
+      color: white;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 35px 15px;
+    }
+    .app {
+      max-width: 380px;
+      margin: 40px auto;
+      padding: 28px 18px;
+      border: 1px solid #00e68a;
+      border-radius: 22px;
+      background: #111b2b;
+    }
+    h1 { color: #00e68a; }
+    .status { color: #b9c5d4; }
+    button {
+      background: #00e68a;
+      color: #07110d;
+      border: 0;
+      border-radius: 12px;
+      padding: 14px 25px;
+      font-weight: bold;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <div class="app">
+    <h1>⚡ MAX VPN MOZ</h1>
+    <p>O teu projeto. A tua ligação.</p>
+    <h2>🔐 VPN</h2>
+    <p class="status" id="status">Demonstração — não conectado</p>
+    <button onclick="demo()">Testar interface</button>
+    <p>Servidor: ainda não configurado</p>
+  </div>
+
+  <script>
+    function demo() {
+      document.getElementById("status").textContent =
+        "Interface de demonstração — sem ligação VPN";
+    }
+  </script>
+</body>
+</html>
